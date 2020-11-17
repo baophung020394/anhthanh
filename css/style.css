@@ -1,3 +1,56 @@
+/* Style for All */
+html,
+body {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  /* font-family: var(--primary-font); */
+  font-size: var(--primary-font-size);
+  line-height: 1.8;
+  color: var(--primary-color);
+}
+:root {
+  --primary-color: #494644;
+  --primary-font-size: 1.6rem;
+  --secondary-font-size: 1.4rem;
+  --color1: #118443;
+}
+
+/* Menu */
+header .navbar-brand {
+  width: 24.1rem;
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar-toggler {
+  font-size: 1.8rem;
+}
+header .navbar-light .navbar-nav .active>.nav-link {
+  color: var(--color1);
+}
+header .languages {
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+header .languages a img {
+  width: 2.9rem;
+}
+header .navbar-nav {
+  text-align: center;
+}
+header .navbar-nav li {
+  border-bottom: 1px solid #c4c4c4;
+}
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--color1);
+}
+/* End Menu */
 .circle-big {
   position: relative;
   width: 114px;
@@ -27,7 +80,6 @@
           transform-origin: 50% 50%;
           animation: big 1.5s ease-in-out;
 }
-
 .circle-big .text {
   position: absolute;
   width: 100%;
@@ -43,6 +95,32 @@
   color: #fff;
 }
 
+/* 768px */
+@media only screen and (min-width: 768px) {
+}
+/* 992px */
+@media only screen and (min-width: 992px) {
+  header .navbar-collapse {
+    border-bottom: 1px solid #c4c4c4;
+    margin-left: 3rem;
+  }
+  header .navbar-nav li {
+    border-bottom: unset;
+    margin-right: 2rem;
+  }
+  header .languages {
+    border-bottom: unset;
+  }
+}
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+}
+/* 1024px */
+@media only screen and (min-width: 1200px) {
+  header .navbar-nav li {
+    margin-right: 5rem;
+  }
+}
 
 /* Animation */
 @keyframes big {

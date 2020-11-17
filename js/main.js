@@ -9,14 +9,17 @@ App = {};
         responsive: {
             0: {
                 items: 2,
+                navText: ["<img src='../img/arrow-left.png'>","<img src='../img/arrow-right.png'>"],
                 nav: true
             },
             768: {
                 items: 2,
+                navText: ["<img src='../img/arrow-left.png'>","<img src='../img/arrow-right.png'>"],
                 nav: false
             },
             992: {
                 items: 1,
+                navText: ["<img src='../img/arrow-left.png'>","<img src='../img/arrow-right.png'>"],
                 nav: true,
                 loop: false
             }
