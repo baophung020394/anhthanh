@@ -20,17 +20,20 @@ body {
   --primary-font-size: 1.6rem;
   --secondary-font-size: 1.4rem;
   --color1: #118443;
-  --color2: #F21C26;
+  --color2: #f21c26;
   --color3: #000000;
   --color4: #045381;
   --color5: #ffffff;
   --color6: #070707;
+  --color7: #c4c4c4;
   --font-size13: 1.3rem;
   --font-size18: 1.8rem;
   --font-size24: 2.4rem;
+  --font-size26: 2.6rem;
   --line-height19: 1.9rem;
   --line-height22: 2.2rem;
   --line-height27: 2.7rem;
+  --line-height38: 3.8rem;
   --font-weight400: 400;
 }
 
@@ -85,7 +88,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 /* Latest News */
 .section-latest-news {
-  background-image: url('../img/bg-carousel.png');
+  background-image: url("../img/bg-carousel.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 0;
@@ -93,7 +96,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 .section-latest-news .header-latest-news {
   text-align: center;
   background-color: var(--color5);
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   border-radius: 0.4rem;
   width: 80%;
   max-width: 80%;
@@ -115,7 +118,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 .section-latest-news .latest-news-title .datetime {
   color: var(--color2);
-  font-size: var(--font-size1);
+  font-size: var(--font-size13);
   line-height: var(--line-height19);
 }
 .readmore a {
@@ -156,9 +159,10 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 .circle-big {
   position: relative;
-  width: 114px;
+  width: 20rem;
   /* height: 114px; */
   margin: 2rem auto 0;
+  text-align: center;
 }
 
 .circle-big svg {
@@ -198,6 +202,78 @@ header .navbar-light .navbar-nav .nav-link:hover {
   color: #fff;
 }
 /* End Circle Home */
+.section-latest-news .left {
+  margin-bottom: 2rem;
+}
+.readmore {
+  text-align: center;
+  margin-top: 2rem;
+}
+.readmore img {
+  width: 3rem;
+  vertical-align: sub;
+}
+/* End Latest News */
+/* Home Product Company */
+/* background: rgba(17, 132, 67, 0.31); */
+/* font-family: UTM Aptima;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 38px;
+text-align: center; */
+.section-home-product .title-section {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+.section-home-product .title-section h2 {
+  display: inline-block;
+  font-size: var(--font-size26);
+  font-weight: bold;
+  line-height: var(--line-height38);
+  text-align: center;
+  background-color: var(--color5);
+  padding: 0 1rem;
+}
+.section-home-product .title-section span {
+  width: 100%;
+  border-bottom: 0.1rem solid var(--color7);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.product {
+  margin: auto;
+}
+.product a {
+  position: relative;
+  width: 24rem;
+  height: 18rem;
+  display: block;
+  margin: auto;
+}
+.product a .layer {
+  position: absolute;
+  width: 20.7rem;
+  height: 14.8rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(17, 132, 67, 0.31);
+}
+.product a img {
+  width: 20.7rem;
+  height: 14.8rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  z-index: 3;
+}
+/* End Home Product Company */
 /* 768px */
 @media only screen and (min-width: 768px) {
   /* Home Carousel */
@@ -205,6 +281,21 @@ header .navbar-light .navbar-nav .nav-link:hover {
     height: 100%;
   }
   /* End Home Carousel */
+  /* Home Product Company */
+  .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .products .product {
+    width: 50%;
+    margin: 0;
+  }
+  .products .product a {
+    /* width: 100%; */
+  }
+  /* End Home Product Company */
 }
 /* 992px */
 @media only screen and (min-width: 992px) {
@@ -239,6 +330,49 @@ header .navbar-light .navbar-nav .nav-link:hover {
     right: 3rem;
   }
   /* End Home Carousel */
+  /* Latest New */
+  .section-latest-news .header-latest-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 90%;
+    max-width: 90%; */
+  }
+  .section-latest-news .header-latest-news .latest-news,
+  .section-latest-news .header-latest-news .readmore {
+    flex-grow: 1;
+  }
+  .section-latest-news .header-latest-news .readmore {
+    margin-top: 0;
+  }
+  .section-latest-news .header-latest-news .latest-news-title h2 {
+    margin: 0 2rem 0 0;
+  }
+  .section-latest-news .header-latest-news .latest-news-title {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .section-latest-news .header-latest-news {
+    padding: 0.5rem 0;
+    margin-bottom: 4rem;
+  }
+  .section-latest-news .content-latest-news .left .frame {
+    flex-direction: row;
+  }
+  .section-latest-news .readmore {
+    text-align: right;
+  }
+  .section-latest-news .right {
+    padding-top: 1.7rem;
+  }
+  /* .circle-big {
+    width: 19.5rem;
+  } */
+  /* End Latest New */
 }
 /* 1024px */
 @media only screen and (min-width: 1024px) {
@@ -250,6 +384,14 @@ header .navbar-light .navbar-nav .nav-link:hover {
     right: 4rem;
   }
   /* End Home Carousel */
+  /* Home Product Company */
+  .products .product a {
+    width: 100%;
+  }
+  .products .product {
+    width: 20%;
+  }
+  /* End Home Product Company */
 }
 /* 1200px */
 @media only screen and (min-width: 1200px) {
