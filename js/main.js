@@ -6,6 +6,7 @@ App = {};
         loop: true,
         margin: 10,
         responsiveClass: true,
+        dots:false,
         responsive: {
             0: {
                 items: 2,
@@ -15,13 +16,13 @@ App = {};
             768: {
                 items: 2,
                 navText: ["<img src='../img/arrow-left.png'>","<img src='../img/arrow-right.png'>"],
-                nav: false
+                nav: true
             },
             992: {
                 items: 1,
                 navText: ["<img src='../img/arrow-left.png'>","<img src='../img/arrow-right.png'>"],
                 nav: true,
-                loop: false
+                margin: 0
             }
         }
     });
