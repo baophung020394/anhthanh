@@ -457,6 +457,7 @@ footer .bottom a img {
 .main {
   padding: 4rem 0;
 }
+.about h2.title,
 .project h2.title,
 .category h2.title {
   display: flex;
@@ -470,6 +471,7 @@ footer .bottom a img {
   color: var(--color1);
   font-family: var(--font-family1);
 }
+.about h2.title .img,
 .project h2.title .img,
 .category h2.title .img {
   position: absolute;
@@ -480,10 +482,12 @@ footer .bottom a img {
   background-color: var(--color5);
   padding: 0 1rem;
 }
+.about h2.title img,
 .project h2.title img,
 .category h2.title img {
-  width: 100%;
+  width: 100% !important;
 }
+.about h2.title .bottom-line,
 .project h2.title .bottom-line,
 .category h2.title .bottom-line {
   width: 95%;
@@ -725,13 +729,48 @@ footer .bottom a img {
 }
 .project .box-project-item {
   position: absolute;
-  bottom: 0;
+  bottom: 4rem;
   right: 0;
   z-index: 1;
-  width: 80%;
+  width: 89%;
   padding: 1rem;
 }
+.project .readmore {
+  margin: 0;
+  text-align: right;
+}
+.project .readmore a {
+  color: var(--color5);
+}
 /* End Project */
+/* About */
+.about .section-latest-news {
+  background-image: url('../img/bg-about.png');
+  position: relative;
+}
+.about .section-latest-news:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 132, 67, 0.85);
+}
+.about .section-latest-news h2.title {
+  color: var(--color5);
+}
+.about .mid-description p {
+  color: var(--color5);
+}
+.about .images .image {
+  padding: 1rem;
+}
+.about .images {
+  width: 100%;
+}
+/* End About */
 /* 768px */
 @media only screen and (min-width: 768px) {
   .section-latest-news .content-latest-news .left .frame {
@@ -765,15 +804,19 @@ footer .bottom a img {
   }
   /* End Home Product Company */
   /* Category */
+  .about h2.title,
   .project h2.title,
   .category h2.title {
     font-size: var(--font-size30);
     padding: 0.5rem 0 0 2.9rem;
   }
+  .about h2.title .img,
   .project h2.title .img,
   .category h2.title .img {
     width: 30rem;
   }
+  
+  .about h2.title .bottom-line,
   .project h2.title .bottom-line,
   .category h2.title .bottom-line {
     top: 3.3rem;
@@ -821,7 +864,27 @@ footer .bottom a img {
     right: 0;
     width: 39%;
   }
+  .project .box-project-item { 
+    padding: 2rem;
+    bottom: 1rem;
+    right: 2rem;
+    width: 84%;
+  }
+  .project .box {
+    margin-bottom: 2rem;
+  }
   /* End Project */
+  /* About */
+  .about .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about .images .image {
+    width: 50%;
+  }
+  /* End About */
 }
 /* 992px */
 @media only screen and (min-width: 992px) {
@@ -932,6 +995,7 @@ footer .bottom a img {
     margin: 0;
   }
   /* Contact */
+  /* .about h2.title .bottom-line , */
   .contact h2.title .bottom-line {
     width: 42%;
   }
@@ -942,6 +1006,15 @@ footer .bottom a img {
   }
   .section-newsest-today .media img.mr-3 {
     width: 20rem;
+  }
+  /* Project */
+  .project .box-project-item h2 {
+    font-size: var(--font-size30);
+  }
+  /* End project */
+  .about .images .image {
+    width: 20%;
+    padding: 2rem;
   }
 }
 /* 1024px */
@@ -986,14 +1059,17 @@ footer .bottom a img {
   }
   /* End Home Product Company */
   /* Category */
+  .about h2.title,
   .project h2.title,
   .category h2.title {
     font-size: var(--font-size42);
   }
+  .about h2.title .img,
   .project h2.title .img,
   .category h2.title .img {
     width: 40rem;
   }
+  .about h2.title .bottom-line,
   .project h2.title .bottom-line,
   .category h2.title .bottom-line {
     top: 4rem;
@@ -1005,8 +1081,18 @@ footer .bottom a img {
   }
   /* End Contact */
   /* Project */
+  .about h2.title .bottom-line,
   .project h2.title .bottom-line {
     width: 47%;
+  }
+  .project .project-item img.img-project {
+    width: 60%;
+  }
+
+  .project .box-project-item {
+      bottom: 3rem;
+      right: 6rem;
+      width: 78%;
   }
   /* End Project */
 }
@@ -1049,6 +1135,20 @@ footer .bottom a img {
   /* Project */
   .project h2.title .bottom-line {
     width: 57%;
+  }
+  .project .project-item img.img-project {
+      width: 69%;
+  }
+  .project .box-project-item {
+      bottom: 0rem;
+      right: 9rem;
+      width: 72%;
+  }
+  .project .box {
+    margin-bottom: 5rem;
+  }
+  .project .box-project-item h2 {
+    font-size: var(--font-size42);
   }
   /* End Project */
 }
