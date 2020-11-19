@@ -230,8 +230,10 @@ text-align: center; */
 }
 .section-home-product .title-section h2 {
   display: inline-block;
+  text-transform: uppercase;
   font-size: var(--font-size26);
   font-weight: bold;
+  color: var(--color1);
   line-height: var(--line-height38);
   text-align: center;
   background-color: var(--color5);
@@ -354,6 +356,7 @@ text-align: center; */
   }
   .section-latest-news .header-latest-news .readmore {
     margin-top: 0;
+    padding-right: 2rem;
   }
   .section-latest-news .header-latest-news .latest-news-title h2 {
     margin: 0 2rem 0 0;
