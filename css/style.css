@@ -457,6 +457,7 @@ footer .bottom a img {
 .main {
   padding: 4rem 0;
 }
+.news-local h2.title,
 .about h2.title,
 .project h2.title,
 .category h2.title {
@@ -471,6 +472,7 @@ footer .bottom a img {
   color: var(--color1);
   font-family: var(--font-family1);
 }
+.news-local h2.title .img,
 .about h2.title .img,
 .project h2.title .img,
 .category h2.title .img {
@@ -482,11 +484,15 @@ footer .bottom a img {
   background-color: var(--color5);
   padding: 0 1rem;
 }
+
+.news-local h2.title img,
 .about h2.title img,
 .project h2.title img,
 .category h2.title img {
   width: 100% !important;
 }
+
+.news-local h2.title .bottom-line,
 .about h2.title .bottom-line,
 .project h2.title .bottom-line,
 .category h2.title .bottom-line {
@@ -771,6 +777,44 @@ footer .bottom a img {
   width: 100%;
 }
 /* End About */
+/* News Local */
+.news-local .banner {
+  position: relative;
+  height: 22rem;
+}
+.news-local .banner img {
+  height: 100%;
+}
+.news-local .group-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background: rgba(210, 255, 230, 0.57);
+  padding: 1rem;
+}
+.news-local .group-title span,
+.news-local .group-title p {
+  font-size: var(--font-size26);
+  line-height: var(--line-height38);
+
+  color: #FFFFFF;
+}
+.news-local .group-title span {
+  font-size: var(--primary-font-size);
+}
+.news-local .group-title {
+  padding: 1rem 4rem;
+}
+.news-local .banner {
+  margin-bottom: 2rem;
+}
+.news-local .group-title span,
+.news-local .group-title p {
+  color: var(--color8);
+}
+/* End News Local */
 /* 768px */
 @media only screen and (min-width: 768px) {
   .section-latest-news .content-latest-news .left .frame {
@@ -804,18 +848,23 @@ footer .bottom a img {
   }
   /* End Home Product Company */
   /* Category */
+
+  .news-local h2.title,
   .about h2.title,
   .project h2.title,
   .category h2.title {
     font-size: var(--font-size30);
     padding: 0.5rem 0 0 2.9rem;
   }
+
+  .news-local h2.title .img,
   .about h2.title .img,
   .project h2.title .img,
   .category h2.title .img {
     width: 30rem;
   }
   
+  .news-local h2.title .bottom-line,
   .about h2.title .bottom-line,
   .project h2.title .bottom-line,
   .category h2.title .bottom-line {
@@ -885,6 +934,19 @@ footer .bottom a img {
     width: 50%;
   }
   /* End About */
+  /* News Local */
+  .news-local .banner {
+    height: unset;
+  }
+  .news-local .banner img {
+    height: auto;
+  }
+
+  .news-local .group-title span {
+    font-weight: var(--font-weight400);
+    font-size: var(--font-size24);
+  }
+  /* End News Local */
 }
 /* 992px */
 @media only screen and (min-width: 992px) {
