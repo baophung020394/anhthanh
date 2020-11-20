@@ -714,6 +714,22 @@ footer .bottom a img {
   line-height: var(--line-height27);
   text-align: justify;
   color: var(--color5);
+  margin: 0;
+}
+.project .project-item {
+  position: relative;
+  height: 31.6rem;
+}
+.project .project-item img.img-project {
+  width: 80%;
+}
+.project .box-project-item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 80%;
+  padding: 1rem;
 }
 /* End Project */
 /* 768px */
