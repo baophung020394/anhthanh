@@ -22,7 +22,7 @@ App = {};
     if (windowsize >= 992) {
       //if the window is greater than 440px wide then turn on jScrollPane..
       $(".pos3").css({
-        "margin-top": -heightPos1 + 200 + "px",
+        "margin-top": -heightPos1 + 280 + "px",
       });
     } else if (windowsize < 992) {
       $(".pos3").css({

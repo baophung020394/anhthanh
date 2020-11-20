@@ -1209,6 +1209,12 @@ footer .bottom a img {
   .detail .sidebar .title .bottom-line {
     width: 64%;
   }
+  .detail .column-boxs2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   /* End Detail */
   /* Project Detail */
   .project-detail .title-detail .box-title-detail {
@@ -1253,6 +1259,7 @@ footer .bottom a img {
     right: 2rem;
     width: 82%;
   }
+
   /* End Project Detail */
 }
 /* 992px */
