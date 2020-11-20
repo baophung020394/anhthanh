@@ -457,8 +457,10 @@ footer .bottom a img {
 .main {
   padding: 4rem 0;
 }
+.project h2.title,
 .category h2.title {
   display: flex;
+  /* font-weight: bold; */
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -466,7 +468,9 @@ footer .bottom a img {
   padding: 0.6rem 0 0 2.9rem;
   position: relative;
   color: var(--color1);
+  font-family: var(--font-family1);
 }
+.project h2.title .img,
 .category h2.title .img {
   position: absolute;
   left: 1.3rem;
@@ -476,18 +480,21 @@ footer .bottom a img {
   background-color: var(--color5);
   padding: 0 1rem;
 }
+.project h2.title img,
 .category h2.title img {
   width: 100%;
 }
+.project h2.title .bottom-line,
 .category h2.title .bottom-line {
-  width: 100%;
+  width: 95%;
   border-bottom: 1px solid var(--color7);
   display: inline-block;
   position: absolute;
   top: 2.3rem;
-  left: 0;
+  right: 0;
   z-index: -3;
 }
+
 .category .title-category {
   color: var(--color1);
   font-family: var(--font-family2);
@@ -535,11 +542,11 @@ footer .bottom a img {
   border: 0.1rem solid var(--color8);
   border-radius: 0;
 }
-.category .paginations ul {
+.paginations ul {
   justify-content: center;
   align-items: center;
 }
-.category .paginations ul li a {
+.paginations ul li a {
   border: none;
   font-family: var(--font-family2);
   font-weight: bold;
@@ -548,7 +555,7 @@ footer .bottom a img {
   text-align: justify;
   color: var(--primary-color);
 }
-.category .paginations ul li.page-item.active a {
+.paginations ul li.page-item.active a {
   background-color: unset;
   border-color: none;
   color: var(--color2);
@@ -674,6 +681,41 @@ footer .bottom a img {
   margin-bottom: 2rem;
 }
 /* End Contact */
+/* Project */
+.project h2.title .img {
+  width: 29rem;
+}
+.project .box-project-item {
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-project-box.png");
+
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.project .box-project-item:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 132, 67, 0.5);
+}
+.project .box-project-item h2 {
+  font-family: var(--font-family1);
+  font-size: var(--font-size18);
+  color: var(--color5);
+  text-align: center;
+}
+.project .box-project-item p {
+  font-size: var(--primary-font-size);
+  line-height: var(--line-height27);
+  text-align: justify;
+  color: var(--color5);
+}
+/* End Project */
 /* 768px */
 @media only screen and (min-width: 768px) {
   .section-latest-news .content-latest-news .left .frame {
@@ -707,16 +749,20 @@ footer .bottom a img {
   }
   /* End Home Product Company */
   /* Category */
+  .project h2.title,
   .category h2.title {
     font-size: var(--font-size30);
     padding: 0.5rem 0 0 2.9rem;
   }
+  .project h2.title .img,
   .category h2.title .img {
     width: 30rem;
   }
+  .project h2.title .bottom-line,
   .category h2.title .bottom-line {
     top: 3.3rem;
   }
+
   .category .categories h5.card-title a {
     font-size: var(--font-size26);
   }
@@ -753,6 +799,13 @@ footer .bottom a img {
     width: 45%;
   }
   /* End Contact */
+  /* Project */
+  .project h2.title .bottom-line {
+    left: unset;
+    right: 0;
+    width: 39%;
+  }
+  /* End Project */
 }
 /* 992px */
 @media only screen and (min-width: 992px) {
@@ -896,6 +949,11 @@ footer .bottom a img {
     width: 20%;
   } */
   /* End Home Product Company */
+  /* Project */
+  .project h2.title .bottom-line {
+    width: 54%;
+  }
+  /* End Project */
 }
 /* 1200px */
 @media only screen and (min-width: 1200px) {
@@ -912,12 +970,15 @@ footer .bottom a img {
   }
   /* End Home Product Company */
   /* Category */
+  .project h2.title,
   .category h2.title {
     font-size: var(--font-size42);
   }
+  .project h2.title .img,
   .category h2.title .img {
     width: 40rem;
   }
+  .project h2.title .bottom-line,
   .category h2.title .bottom-line {
     top: 4rem;
   }
@@ -927,6 +988,11 @@ footer .bottom a img {
     width: 52%;
   }
   /* End Contact */
+  /* Project */
+  .project h2.title .bottom-line {
+    width: 47%;
+  }
+  /* End Project */
 }
 
 /* 1300px */
@@ -964,6 +1030,11 @@ footer .bottom a img {
     width: 61%;
   }
   /* End Contact */
+  /* Project */
+  .project h2.title .bottom-line {
+    width: 57%;
+  }
+  /* End Project */
 }
 /* Animation */
 @keyframes big {
