@@ -132,6 +132,7 @@ App = {};
      // Run first
      $(document).ready(function () { 
         App.checkWindowSize();
+        // Click menu mobile
         $('header ul li').on('click', function() {
             $(this).find('ul').toggleClass('active');
             console.log(this);
