@@ -32,6 +32,7 @@ App = {};
       return;
     }
   };
+
   // Load First
   $(".carousel").owlCarousel({
     loop: true,
@@ -42,16 +43,16 @@ App = {};
       0: {
         items: 2,
         navText: [
-          "<img src='./img/arrow-left.png'>",
-          "<img src='./img/arrow-right.png'>",
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
         ],
         nav: true,
       },
       768: {
         items: 2,
         navText: [
-          "<img src='./img/arrow-left.png'>",
-          "<img src='./img/arrow-right.png'>",
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
         ],
         nav: true,
       },
@@ -67,6 +68,7 @@ App = {};
     },
   });
 
+  // Các sản phẩm công ty
   $(".products.owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -74,19 +76,32 @@ App = {};
     responsive: {
       0: {
         items: 2,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
       },
       768: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
       },
       1024: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
       },
     },
   });
 
+  // CEO
   $(".founders.owl-carousel").owlCarousel({
     loop: true,
     // margin: auto,
@@ -94,20 +109,33 @@ App = {};
     responsive: {
       0: {
         items: 2,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left.png'>",
+          "<img src='./img/arrow-right.png'>",
+        ],
       },
       768: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left.png'>",
+          "<img src='./img/arrow-right.png'>",
+        ],
       },
       992: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left.png'>",
+          "<img src='./img/arrow-right.png'>",
+        ],
         margin: 0,
       },
     },
   });
 
+  // Công ty thành viên
   $(".companies.owl-carousel").owlCarousel({
     loop: true,
     // margin: auto,
@@ -115,15 +143,27 @@ App = {};
     responsive: {
       0: {
         items: 2,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
       },
       768: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
       },
       992: {
         items: 3,
-        nav: false,
+        nav: true,
+        navText: [
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
+        ],
         margin: 0,
       },
     },
@@ -138,16 +178,16 @@ App = {};
       0: {
         items: 1,
         navText: [
-          "<img src='./img/arrow-left.png'>",
-          "<img src='./img/arrow-right.png'>",
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
         ],
         nav: true,
       },
       768: {
         items: 1,
         navText: [
-          "<img src='./img/arrow-left.png'>",
-          "<img src='./img/arrow-right.png'>",
+          "<img src='./img/arrow-left2.png'>",
+          "<img src='./img/arrow-right2.png'>",
         ],
         nav: true,
       },
