@@ -203,6 +203,10 @@ App = {};
     },
   });
 
+  $('[data-fancybox="gallery"]').fancybox({
+    // Options will go here
+  });
+
   // When resize screen
   $(window).resize(function () {
     App.checkWindowSize();

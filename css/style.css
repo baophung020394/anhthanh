@@ -1166,7 +1166,7 @@ footer .bottom a img {
     flex-wrap: wrap;
   }
   .about .images .image {
-    width: 50%;
+    /* width: 50%; */
   }
   /* End About */
   /* News Local */
@@ -1397,8 +1397,8 @@ footer .bottom a img {
   }
   /* End project */
   .about .images .image {
-    width: 20%;
-    padding: 2rem;
+    /* width: 20%;
+    padding: 2rem; */
   }
   /* Boxs Local News */
   .box-news-local .boxs {
