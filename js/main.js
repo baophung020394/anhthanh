@@ -2,13 +2,13 @@ App = {};
 
 (function ($) {
 
-    // App.checkWindowSize = () => {
-    //     var width = $(window).width(),
-    //         new_class = width > 1199 ? "" : "carousel-company owl-carousel";
+    App.checkWindowSize = () => {
+        var width = $(window).width(),
+            new_class = width > 992 ? "" : "menu-mobile";
 
-    //     $(".products").removeClass("carousel-company owl-carousel owl-loaded owl-drag").addClass(new_class);
+        $("header .navbar ul.submenu").removeClass("menu-mobile").addClass(new_class);
         
-    // };
+    };
 
     
     // Load First
@@ -126,32 +126,16 @@ App = {};
 
     // When resize screen
     $(window).resize(function () {
-        // App.checkWindowSize();
+        App.checkWindowSize();
     });
 
      // Run first
      $(document).ready(function () { 
-        // App.checkWindowSize();
-
-        // $('.carousel-company').owlCarousel({
-        //     loop: true,
-        //     margin: 10,
-        //     responsiveClass: true,
-        //     responsive: {
-        //         0: {
-        //             items: 2,
-        //             nav: false
-        //         },
-        //         768: {
-        //             items: 3,
-        //             nav: false
-        //         },
-        //         1024: {
-        //             items: 3,
-        //             nav: false
-        //         }
-        //     }
-        // });
+        App.checkWindowSize();
+        $('header ul li').on('click', function() {
+            $(this).find('ul').toggleClass('active');
+            console.log(this);
+        })
      });
   
 })(jQuery);
