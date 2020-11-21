@@ -99,6 +99,31 @@ App = {};
         }
     });
    
+    $('.news-local.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                navText: ["<img src='./img/arrow-left.png'>", "<img src='./img/arrow-right.png'>"],
+                nav: true
+            },
+            768: {
+                items: 1,
+                navText: ["<img src='./img/arrow-left.png'>", "<img src='./img/arrow-right.png'>"],
+                nav: true
+            },
+            992: {
+                items: 1,
+                navText: ["<img src='./img/arrow-left.png'>", "<img src='./img/arrow-right.png'>"],
+                nav: true,
+                margin: 0
+            }
+        }
+    });
+
     // When resize screen
     $(window).resize(function () {
         // App.checkWindowSize();
