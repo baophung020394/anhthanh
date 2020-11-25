@@ -218,8 +218,12 @@ App = {};
     App.checkWindowSize();
     App.calculatorSidebarDetail();
     // Click menu mobile
-    $("header ul li").on("click", function () {
-      $(this).find("ul").toggleClass("active");
+    $("header ul.navbar-nav li.nav-item").on("click", function () {
+      $(this).find("ul.submenu1").addClass("active");
+      console.log(this);
+    });
+    $("header ul.submenu1 > li").on("click", function () {
+      $(this).find("ul.submenu2").addClass("active");
       console.log(this);
     });
   });

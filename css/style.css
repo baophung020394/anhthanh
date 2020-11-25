@@ -120,8 +120,18 @@ header .menu-mobile {
   display: none;
   background: rgba(17, 132, 67, 0.5);
 }
-header .menu-mobile.active {
+/* header .menu-mobile.active {
   display: block;
+} */
+header .submenu1.active {
+  display: block;
+}
+header .submenu2.active {
+  display: block;
+}
+header .submenu1 li {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 header .navbar-nav .submenu li {
   margin-right: 0;
@@ -1279,6 +1289,14 @@ footer .bottom a img {
   header .languages {
     border-bottom: unset;
   }
+  header ul li:hover > ul.submenu > li:hover > ul.submenu {
+    top: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: visible;
+    left: 100%
+  } 
   /* Home Carousel */
   .section-carousel-banner .news-local .owl-nav,
   .section-carousel-banner .carousel .owl-nav {
