@@ -85,6 +85,31 @@ h2.title .bottom-line {
   display: inline-block;
 }
 /* Menu */
+/* header .navbar-nav .parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+} */
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color5);
+}
+header .navbar-nav .parent a {
+  padding: 1rem;
+}
+header .navbar-nav .parent span.open-menu {
+  color: var(--color5);
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 5;
+  transform: translateY(-50%);
+}
+header .navbar-nav ,
+header .navbar-nav ul {
+  background: rgba(17, 132, 67, 0.5);
+}
 header .navbar-brand {
   width: 24.1rem;
 }
@@ -95,7 +120,8 @@ header .navbar-toggler {
   font-size: 1.8rem;
 }
 header .navbar-light .navbar-nav .active > .nav-link {
-  color: var(--color1);
+  color: var(--color5);
+  font-weight: bold;
 }
 header .languages {
   text-align: center;
@@ -128,10 +154,6 @@ header .submenu1.active {
 }
 header .submenu2.active {
   display: block;
-}
-header .submenu1 li {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 header .navbar-nav .submenu li {
   margin-right: 0;
@@ -1278,6 +1300,26 @@ footer .bottom a img {
 }
 /* 992px */
 @media only screen and (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--primary-color);
+  }
+  header .navbar-nav, header .navbar-nav ul{
+    background-color: var(--color5);
+  }
+  header .navbar-nav .parent a {
+    padding: 0.5rem;
+  }
+  header .navbar-light .navbar-nav .active > .nav-link {
+    color: var(--color1);
+  }
+  header .navbar-nav .parent { 
+    display: block;
+    padding: 0;
+  }
+  header .submenu1 li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   header .navbar-collapse {
     border-bottom: 1px solid #c4c4c4;
     margin-left: 3rem;
@@ -1494,6 +1536,9 @@ footer .bottom a img {
   header .navbar-nav li .submenu li:hover > ul {
     top: 0;
     left: 100%;
+  }
+  .open-menu {
+    display: none;
   }
   /* End Menu Hover */
   /* Project Detail */

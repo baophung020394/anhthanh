@@ -218,13 +218,24 @@ App = {};
     App.checkWindowSize();
     App.calculatorSidebarDetail();
     // Click menu mobile
-    $("header ul.navbar-nav li.nav-item").on("click", function () {
-      $(this).find("ul.submenu1").addClass("active");
-      console.log(this);
+    // $("header ul.navbar-nav li.nav-item").on("click", function () {
+    //   $(this).find("ul.submenu1").addClass("active");
+    //   console.log(this);
+    // });
+    // $("header ul.submenu1 > li").on("click", function () {
+    //   $(this).find("ul.submenu2").addClass("active");
+    //   console.log(this);
+    // });
+
+    $('.navbar-nav .parent').append('<span class="open-menu fa fa-plus"></span>');
+    // fix non-scrolling overflow issue on mobile devices
+    $('.navbar-nav > ul').wrap('<div class="overflow"></div>');
+
+    $('.open-menu').on('click', function (e) {
+      e.preventDefault();
+      $(this).prev('ul').slideToggle(250);
+      $(this).toggleClass('rotate');
     });
-    $("header ul.submenu1 > li").on("click", function () {
-      $(this).find("ul.submenu2").addClass("active");
-      console.log(this);
-    });
+
   });
 })(jQuery);
