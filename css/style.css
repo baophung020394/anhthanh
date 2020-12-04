@@ -1081,6 +1081,23 @@ footer .bottom a img {
   bottom: 8rem;
 }
 /* End Project Detail */
+.block-image p {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  color: var(--color5);
+  text-align: justify;
+  font-size: 1.4rem;
+  padding: 2rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+}
+.block-image .images:hover p {
+  opacity: 1;
+  visibility: visible;
+}
 /* 768px */
 @media only screen and (min-width: 768px) {
   .section-latest-news .content-latest-news .left .frame {
@@ -1297,6 +1314,11 @@ footer .bottom a img {
   }
 
   /* End Project Detail */
+  .block-image p {
+    top: 5rem;
+    transform: unset;
+    font-size: 2rem;
+  }
 }
 /* 992px */
 @media only screen and (min-width: 992px) {

@@ -41,7 +41,7 @@ App = {};
     dots: false,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
         navText: [
           "<img src='./img/arrow-left2.png'>",
           "<img src='./img/arrow-right2.png'>",
@@ -49,7 +49,7 @@ App = {};
         nav: true,
       },
       768: {
-        items: 2,
+        items: 1,
         navText: [
           "<img src='./img/arrow-left2.png'>",
           "<img src='./img/arrow-right2.png'>",
@@ -217,16 +217,6 @@ App = {};
   $(document).ready(function () {
     App.checkWindowSize();
     App.calculatorSidebarDetail();
-    // Click menu mobile
-    // $("header ul.navbar-nav li.nav-item").on("click", function () {
-    //   $(this).find("ul.submenu1").addClass("active");
-    //   console.log(this);
-    // });
-    // $("header ul.submenu1 > li").on("click", function () {
-    //   $(this).find("ul.submenu2").addClass("active");
-    //   console.log(this);
-    // });
-
     $('.navbar-nav .parent').append('<span class="open-menu fa fa-plus"></span>');
     // fix non-scrolling overflow issue on mobile devices
     $('.navbar-nav > ul').wrap('<div class="overflow"></div>');
@@ -237,5 +227,10 @@ App = {};
       $(this).toggleClass('rotate');
     });
 
+   
+    $('.navbar-nav li').on('click', function() {
+      $('.navbar-nav li').removeClass('active');
+      $(this).addClass('active');
+    })
   });
 })(jQuery);
